@@ -1,0 +1,9 @@
+low=int(input())
+high=int(input())
+count=0
+for i in range(low,high+1):
+    for j in range(2,(i//2)+1):
+        if i%j==0:
+            count+=1
+    if count==0:
+        print(i)
